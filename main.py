@@ -80,9 +80,11 @@ goalFromJan1Dates = [datetime.date(2023, 1, 1), datetime.date(2023, 12, 31)]
 goalFromJan31Dates = [datetime.date(2023, 1, 31), datetime.date(2023, 12, 31)]
 
 fig, ax = plt.subplots()
-ax.plot(date, cumulativeDist, "blue")
+ax.plot(date, cumulativeDist, "blue", marker="o")
 ax.plot(goalFromJan1Dates, goalFromJan1Dists, "red")
 ax.plot(goalFromJan31Dates, goalFromJan1Dists, "green")
 ax.grid()
+ax.set_xbound(datetime.date(2023, 1, 30), datetime.date(2023, 2, 6))
+ax.set_ybound(0, 400)
 ax.legend(["Ride Subtotal", "3650km challenge", "3650km challenge late"])
 plt.show()
