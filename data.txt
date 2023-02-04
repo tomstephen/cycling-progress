@@ -1,0 +1,28 @@
+# format for entries is as follows:
+#
+# DD MM YYYY
+# distance_in_km km, hours:minutes:seconds, departure:time pm, dailyMaxTemp C
+#
+# on days with multiple rides,
+# DD MM YYYY
+# distance_in_km km, hours:minutes:seconds, departure:time pm, dailyMaxTemp C # <-- ride 1
+# distance_in_km km, hours:minutes:seconds, departure:time pm, dailyMaxTemp C # <-- ride 2
+# distance_in_km km, hours:minutes:seconds, departure:time pm, dailyMaxTemp C # <-- ride 3
+#
+# comments on new lines starting with #
+
+31 01 2023
+3.41 km, 0:12:05, 5:05 pm, 28 C
+11.36 km, 1:04:46, 6:28 pm, 28 C
+2.68 km, 0:09:20, 8:52 pm, 28 C
+
+01 02 2023
+7.24 km, 0:21:37, 7:15 am, 35 C
+
+03 02 2023
+3.16 km, 0:11:10, 4:16 pm, 35 C
+15.3 km, 2:21:24, 5:49 pm, 35 C
+2.82 km, 0:11:15, 9:25 pm, 35 C
+
+04 02 2023
+8.45 km, 0:26:24, 7:38 pm, 30 C
